@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}HOME{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-12 mb-3">
+        <h4 class="text-center text-white">Welcome {{ user.username }}</h4>
+        <h4 class="text-center text-white">Email ID {{ user.email }}</h4>
+        <button class="btn btn-primary mb-2">
+            <a href="{% url 'logout' %}">Logout With Google</a>
+        </button>
+
+        
+    </div>
+</div>
+{% endblock %}
